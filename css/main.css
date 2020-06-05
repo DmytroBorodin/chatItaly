@@ -1,0 +1,275 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: Roboto;
+	font-weight: normal;
+	height: 100vh;
+}
+body {
+	height: inherit;
+	position: relative;
+}
+#header {
+	width: 100%;
+	height: 8.2rem;
+}
+#navbar {
+	height: inherit;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1.6rem;
+	background-color: #595959;
+	color: #fff;
+}
+
+.title__block {
+	display: flex;
+	align-items: center;
+	font-size: 3.3rem;
+}
+.logo {
+	margin-right: 7.4rem;
+}
+.btn__block {
+	display: flex;
+	align-items: center;
+}
+.nav__btn {
+	border-radius: 3px;
+	height: 6.6rem;
+	width: 6.6rem;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e7e6e6;
+	color: #000;
+	font-size: 3.8rem;
+	margin-right: 2.2rem;
+	cursor: pointer;
+}
+.nav__btn:last-child {
+	margin-right: 0;
+}
+.activeSpan{
+	color: #fff;
+}
+.lines {
+	padding: 0 1rem;
+	border-radius: 3px;
+	height: 6.6rem;
+	width: 6.6rem;
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	background-color: #e7e6e6;
+	color: #000;
+	font-size: 3.8rem;
+}
+.active {
+	background-color: #595959;
+}
+.menu__line {
+	background-color: #000;
+	height: 1rem;
+	display: block;
+	margin-bottom: 0.4rem;
+}
+.activeLinesSpan{
+	background-color: #fff;
+}
+.menu__line:last-child {
+	margin-bottom: 0;
+}
+.l__100 {
+	width: 100%;
+}
+.l__50 {
+	width: 50%;
+}
+.l__70 {
+	width: 70%;
+}
+.l__35 {
+	width: 35%
+}
+
+/* main */
+#main {
+	height: calc(100vh - 17.8rem);
+	position: relative;
+}
+.container {
+	display: flex;
+	height: inherit;
+	width: 100%;
+}
+.members__block {
+	width: 33%;
+	background-color: #3e3e3e;
+	overflow-y: scroll;
+	padding: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.user__block {
+	width: 49%;
+	margin-bottom: 2%;
+	background-color: #000;
+	border: 2.5px solid #ffff00;
+	border-radius: 3.3rem;
+	height: 20.8rem;
+	position: relative;
+}
+.user__block:nth-child(odd) {
+	margin-right: 2%;
+}
+.buttons__block {
+	display: flex;
+	position: absolute;
+	top: 1.5rem;
+	right: 0.5rem;
+	visibility: hidden;
+}
+.user__block:hover .buttons__block{
+	visibility: visible;
+}
+.buttons__block .nav__btn {
+	position: relative;
+	heigth: 6rem;
+	width: 6rem;
+	margin-right: 1.2rem;
+}
+.mute__span {
+	display: none;
+	width: 120%;
+	height: 3px;
+	background-color: #000;
+	position: absolute;
+	top: 50%;
+	transform: rotate(-45deg);
+}
+.mute {
+	display: block;
+}
+.unmute {
+	background-color: #4caf50;
+	color: #fff;
+}
+.user__block p {
+	position: absolute;
+	bottom: 3rem;
+	left: 3rem;
+	color: #fff;
+	font-size: 2rem;
+	visibility: hidden;
+}
+.user__block:hover p {
+	visibility: visible;
+}
+
+/* video__block */
+
+.video__block {
+	background-color: #3e3e3e;
+	padding: 2rem;
+	width: 42.7%;
+}
+.inner-video__block {
+	width: 100%;
+	height: 40rem;
+	border-radius: 8.8rem;
+	background-color: #000;
+}
+
+/* chat_block */
+.messages__block {
+	width: 24.3%;
+	background-color: #818181;
+	height: 100%;
+}
+.chat__block {
+	width: 100%;
+	height: calc(100% - 9.6rem);
+	overflow-y: scroll;
+	padding: 1.5rem;
+}
+.message__block {
+	width: 100%;
+	padding: 1rem;
+	border-radius: 1rem;
+	background-color: #e7e6e6;
+	font-size: 1.8rem;
+	margin-bottom: 1.5rem;
+}
+.data {
+	color: #aeaaaa;
+	margin-bottom: 3.3rem;
+}
+.message__text {
+	color: #000;
+}
+.file__block {
+	width: 100%;
+	padding: 1.5rem;
+	background-color: #a6a6a6;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.file__block .nav__btn{
+	width: 6.2rem;
+	height: 6.2rem;
+}
+.messages__block__footer{
+	display: flex;
+	justify-content: space-between;
+	with: 100%;
+	height: 9.6rem;
+	padding: 1.5rem;
+}
+.messages__block__footer textarea{
+	border-radius: 0.8rem;
+	border: none;
+	background-color: #e7e6e6;
+	width: 60%;
+}
+.messages__block__footer .nav__btn {
+	margin-right: 0;
+}
+
+/* footer */
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 9.6rem;
+	background-color: #595959;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer__btns {
+	display: flex;
+	height: inherit;
+	align-items: center;
+}
+.footer__btns .nav__btn {
+	position: relative;
+}
+.phone {
+	background-color: #f44336;
+	color: #fff;
+}
+.counter {
+	width: 24.3%;
+	font-size: 2rem;
+	color:#fff;
+	padding-left:1.5rem;
+}
