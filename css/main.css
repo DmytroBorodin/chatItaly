@@ -136,6 +136,7 @@ video {
 	height: 20.8rem;
 	position: relative;
 	margin-bottom: 2%;
+	-webkit-transform: translateZ(0);
 }
 .user__block:nth-child(odd) {
 	margin-right: 2%;
@@ -207,6 +208,7 @@ video {
 	height: 40rem;
 	border-radius: 8.8rem;
 	background-color: #000;
+	-webkit-transform: translateZ(0);
 }
 .inner-video__block video {
 	width: 100%;
