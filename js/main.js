@@ -7,11 +7,11 @@ let navBar = document.getElementById('navbar');
 let navButtons = navBar.querySelectorAll('.nav__btn');
 let navButtonsArray = [...navButtons];
 
-let lines = document.querySelector('.lines');
+/*let lines = document.querySelector('.lines');
 console.log(lines);
 let lineSpans = lines.querySelectorAll('span');
 let lineSpansArray = [...lineSpans];
-console.log(lineSpansArray);
+console.log(lineSpansArray);*/
 
 let monitor = document.getElementById('monitor');
 
@@ -23,12 +23,12 @@ navButtonsArray.forEach(navBtn => {
 	})
 });
 
-lines.addEventListener('click', () => {
+/*lines.addEventListener('click', () => {
 	lines.classList.toggle('active');
 	lineSpansArray.forEach(sp => {
 		sp.classList.toggle('activeLinesSpan');
 	})
-});
+});*/
 
 userButtonsArray.forEach( btn => {
 	btn.addEventListener('click', () => {
