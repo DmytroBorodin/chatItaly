@@ -17,9 +17,9 @@ let monitor = document.getElementById('monitor');
 
 navButtonsArray.forEach(navBtn => {
 	navBtn.addEventListener('click', () => {
-		let innerSpan = navBtn.querySelector('span');
+		let innerSvg = navBtn.querySelector('svg');
 		navBtn.classList.toggle('active');
-		innerSpan.classList.toggle('activeSpan');
+		innerSvg.classList.toggle('activeSvg');
 	})
 });
 
@@ -33,17 +33,22 @@ lines.addEventListener('click', () => {
 userButtonsArray.forEach( btn => {
 	btn.addEventListener('click', () => {
 		let muteItem = btn.querySelector('.mute__span');
+		let muteSvg = btn.querySelector('svg');
 		if (muteItem.classList.contains('mute')){
 			muteItem.classList.remove('mute');
 			btn.classList.add('unmute');
+			muteSvg.classList.add('unmuteSvg');
 		}else if(!muteItem.classList.contains('mute')){
 			muteItem.classList.add('mute');
 			btn.classList.remove('unmute');
+			muteSvg.classList.remove('unmuteSvg');
 		}
 	})	
 });
 
 monitor.addEventListener('click', () => {
+	let muteSvg = monitor.querySelector('svg');
 	monitor.classList.toggle('unmute');
+	muteSvg.classList.toggle('unmuteSvg');
 })
 
