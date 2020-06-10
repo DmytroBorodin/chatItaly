@@ -20,7 +20,7 @@ let messegesSection = document.querySelector('.messages__block');
 let windowWidth = document.documentElement.clientWidth;
 let windowHeight = document.documentElement.clientHeight;
 
-if(windowWidth>700 && windowHeight>600){
+if(windowWidth>700){
 	usersBtn.addEventListener('click', () => {
 		if(messegesSection.classList.contains('disabled')){
 			videoChatSection.classList.toggle('maxVideoWidth');
@@ -61,7 +61,7 @@ if(windowWidth>700 && windowHeight>600){
 	})
 }
 
-if(windowWidth<700 || windowHeight<600){
+if(windowWidth<700){
 	usersBtn.addEventListener('click', () => {
 		if(messegesSection.classList.contains('disabled')){
 			videoChatSection.classList.toggle('maxVideoheight');

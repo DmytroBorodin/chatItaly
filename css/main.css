@@ -464,7 +464,7 @@ video {
 	    font-size: 1.6rem;
 	}
 }
-@media screen and (max-height: 600px) {
+/* @media screen and (max-height: 600px) {
 	.container {
 		flex-direction: column;
 		height: inherit;
@@ -510,7 +510,7 @@ video {
 	.mute__span {
 		height: 1.5px;
 	}
-}
+} */
 
 .maxVideoWidth {
 	width: 100%;
