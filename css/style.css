@@ -12,7 +12,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -27,27 +27,30 @@
 .icon-down-arrow:before {
   content: "\e900";
 }
-.icon-microphone:before {
+.icon-menu:before {
   content: "\e901";
 }
-.icon-monitor:before {
+.icon-microphone:before {
   content: "\e902";
 }
-.icon-next:before {
+.icon-monitor:before {
   content: "\e903";
 }
-.icon-paper-clip:before {
+.icon-next:before {
   content: "\e904";
 }
-.icon-phone-buttons-black-squares-symbol:before {
+.icon-paper-clip:before {
   content: "\e905";
 }
-.icon-stop:before {
+.icon-phone-buttons-black-squares-symbol:before {
   content: "\e906";
 }
-.icon-video-camera:before {
+.icon-stop:before {
   content: "\e907";
 }
-.icon-vintage-phone-receiver:before {
+.icon-video-camera:before {
   content: "\e908";
+}
+.icon-vintage-phone-receiver:before {
+  content: "\e909";
 }
